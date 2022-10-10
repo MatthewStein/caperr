@@ -131,9 +131,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us' #FIXME
+LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'America/New_York' #FIXME
+TIME_ZONE = 'America/New_York'
 
 USE_I18N = True
 
@@ -155,10 +155,6 @@ STATICFILES_STORAGE = 'gph.storage.CustomStorage'
 # Email SMTP information
 
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'FIXME'
-EMAIL_HOST_USER = 'FIXME'
-EMAIL_HOST_PASSWORD = 'FIXME'
-EMAIL_PORT = 'FIXME'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_SUBJECT_PREFIX = '[Caperr] '
 
@@ -191,8 +187,6 @@ LOGGING = {
             'format': '%(asctime)s (PID %(process)d) [%(levelname)s] %(name)s %(message)s'
         },
     },
-    # FIXME you may want to change the filenames to something like
-    # /srv/logs/django.log or similar
     'handlers': {
         'django': {
             'level': 'INFO',
