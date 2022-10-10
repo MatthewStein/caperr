@@ -15,7 +15,7 @@ CONTACT_EMAIL = 'hello@enigmida.com'
 MESSAGING_SENDER_EMAIL = 'hello@enigmida.com'
 
 # Change this to True to reveal the story page to everyone.
-STORY_PAGE_VISIBLE = True
+STORY_PAGE_VISIBLE = False
 # Change this to True when the wrapup exists.
 WRAPUP_PAGE_VISIBLE = False
 # Change this to True to start showing solve and guess counts on each puzzle.
