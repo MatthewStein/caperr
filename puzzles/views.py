@@ -566,7 +566,7 @@ def puzzle(request):
         return render(request, 'puzzle.html', data)
 
 
-@validate_puzzle(require_team=True)
+@validate_puzzle(require_team=False)
 @require_before_hunt_closed_or_admin
 def solve(request):
     '''Submit an answer for a puzzle, and check if it's correct.'''

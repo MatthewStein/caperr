@@ -1,0 +1,15 @@
+- model: puzzles.Round
+  pk: 1
+  fields:
+    name: Assignments
+    slug: assignments
+    meta: 1
+- model: puzzles.Puzzle
+  pk: 1
+  fields:
+    name: The Trash Monster
+    slug: trash-monster
+    body_template: trash-monster.html
+    answer: HIDDENGEMS
+    round: 1
+    unlock_global: 0

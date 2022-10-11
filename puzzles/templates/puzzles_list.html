@@ -14,19 +14,6 @@
                 {% endif %}
                 {{ data.puzzle.name }}
             </a>
-            {% if 'solve_stats' in data %}
-            <div class="puzzles-inner">
-                {% if data.full_stats %}
-                <a href="{% url 'stats' data.puzzle.slug %}">
-                {% endif %}
-                {% blocktranslate count correct=data.solve_stats.correct %}<b>{{ correct }}</b>&nbsp;solve{% plural %}<b>{{ correct }}</b>&nbsp;solves{% endblocktranslate %}
-                | {% blocktranslate count guesses=data.solve_stats.guesses %}<b>{{ guesses }}</b>&nbsp;guess{% plural %}<b>{{ guesses }}</b>&nbsp;guesses{% endblocktranslate %}
-                {% if data.full_stats %}
-                | {% blocktranslate count teams=data.solve_stats.teams %}<b>{{ teams }}</b>&nbsp;team{% plural %}<b>{{ teams }}</b>&nbsp;teams{% endblocktranslate %}
-                </a>
-                {% endif %}
-            </div>
-            {% endif %}
         </td>
         <td>
             {% if data.full_stats %}

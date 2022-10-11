@@ -8,9 +8,9 @@ html {
     --accent-bg-color: rgba(var(--accent-rgb), 0.1);
     --accent-hover-color: #2af;
 
-    --page-bg-color: rgb(var(--page-bg-rgb));
+/*    --page-bg-color: rgb(var(--page-bg-rgb));
     --sticky-bg-color: rgba(var(--page-bg-rgb), 0.9);
-    --heading-text-color: var(--accent-color);
+    --heading-text-color: var(--accent-color);*/
 
     --border-color: var(--accent-color);
     --print-border-color: #111;
@@ -25,10 +25,10 @@ html {
     --tray-text-color: var(--accent-color);
     --tray-bg-color: var(--neutral-color);
 
-    --text-font: sans-serif;
-    --btn-font: sans-serif;
-    --input-font: monospace;
-    --answer-font: monospace;
+    --text-font: 'Roboto', sans-serif;
+    --btn-font: 'Roboto', sans-serif;
+    --input-font: 'Roboto', monospace;
+    --answer-font: 'Roboto', monospace;
 }
 
 body {
@@ -38,6 +38,7 @@ body {
     font-size: 1.75rem;
     overflow-wrap: break-word;
     position: relative;
+    background-color: #96edfe;
 }
 
 @media print {
@@ -156,6 +157,10 @@ figcaption {
     text-align: center;
 }
 
+.site-logo {
+    height: 120px;
+}
+
 @media print {
     main {
         border-top: 1px solid var(--print-border-color);
@@ -245,7 +250,7 @@ figcaption {
         justify-content: space-evenly;
         font-size: 2rem;
         margin: 5px 0 1.5rem;
-        line-height: 1;
+        line-height: 2.5;
     }
 
     .top-tabs a {

@@ -2,19 +2,16 @@
 {% load i18n %}
 {% block content %}
 
-{% if hunt_is_prereleased %}
+<!-- {% if hunt_is_prereleased %}
 <h3 style="text-align: center">
     {% translate "You are a pre-release testsolver, so you may be seeing puzzles that are locked for the general public. Please be careful!" %}
 </h3>
-{% endif %}
+{% endif %} -->
+
+<h1>Available Superhero Gigs</h1>
 
 <table class="puzzles-list">
 {% for round in rounds.values %}
-    <tbody>
-        <th colspan="4">
-            <h1><a href="{% url 'round' round.round.slug %}">{{ round.round.name }}</a></h1>
-        </th>
-    </tbody>
     {% include 'puzzles_list.html' with round=round %}
 {% endfor %}
 </table>

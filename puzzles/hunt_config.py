@@ -27,8 +27,8 @@ SURVEYS_AVAILABLE = False
 
 HUNT_START_TIME = timezone.make_aware(datetime.datetime(
     year=2022,
-    month=9,
-    day=12,
+    month=10,
+    day=10,
     hour=12,
     minute=0,
 ))
