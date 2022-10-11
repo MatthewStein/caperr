@@ -16,5 +16,7 @@
 </style>
 <h2>Welcome to Caperr!</h2>
 <p class="subtitle">We find <i>super gigs</i> for <i>superheroes</i>. If you are ready to help solve the world's puzzles and defeat some evil, we invite you to join us.</p>
+{% format_time start_time "DATE_AT_TIME" as hunt_start %}
+<p class="subtitle">You'll receive your first Assignment on <i>{{ hunt_start }}</i>.</p>
 <img class="hero-cover" src="/static/images/hero-cover.png">
 {% endblock %}
