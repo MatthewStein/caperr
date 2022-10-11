@@ -4,49 +4,17 @@
 
 {% block content %}
 <style>
-@media print {
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .feedback, .register {
-        display: none;
-    }
-
-    .print-register {
-        text-align: center;
-        margin: 20px 0 40px;
-    }
+.hero-cover {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-@media screen {
-    .print-register {
-        display: none;
-    }
-
-    .feedback, .register {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .register .btn {
-        height: 48px;
-        line-height: 48px;
-        font-size: 3rem;
-    }
-}
-
-.footnote {
-    font-size: 80%;
-    line-height: 1.5;
-}
-
-.site-logo {
-
+.subtitle {
+    font-size: 1.2em;
 }
 </style>
-<div class="info-row">
-    <h1>super gigs for superheroes</h1>
-</div>
+<h2>Welcome to Caperr!</h2>
+<p class="subtitle">We find <i>super gigs</i> for <i>superheroes</i>. If you are ready to help solve the world's puzzles and defeat some evil, we invite you to join us.</p>
+<img class="hero-cover" src="/static/images/hero-cover.png">
 {% endblock %}

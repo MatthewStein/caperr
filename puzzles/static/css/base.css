@@ -3,9 +3,9 @@ html {
     --accent-rgb: 0, 85, 170;
 
     --white-color: white;
-    --neutral-color: #bbb;
+    --neutral-color: #f6f6f6;
     --accent-color: rgb(var(--accent-rgb));
-    --accent-bg-color: rgba(var(--accent-rgb), 0.1);
+    --accent-bg-color: rgba(var(--accent-rgb), 0.3);
     --accent-hover-color: #2af;
 
 /*    --page-bg-color: rgb(var(--page-bg-rgb));
@@ -29,6 +29,8 @@ html {
     --btn-font: 'Roboto', sans-serif;
     --input-font: 'Roboto', monospace;
     --answer-font: 'Roboto', monospace;
+
+    min-height: 100%;
 }
 
 body {
@@ -38,7 +40,9 @@ body {
     font-size: 1.75rem;
     overflow-wrap: break-word;
     position: relative;
-    background-color: #96edfe;
+    /*background-color: #96edfe;*/
+    background-image: url("../images/sky.png");
+    background-size: cover;
 }
 
 @media print {
@@ -79,11 +83,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+@font-face {
+    font-family: 'RC';
+    src: url('../fonts/RC.otf');
+}
+
 h1, h2 {
     margin-top: 2.5rem;
     margin-bottom: 4rem;
     font-size: 4rem;
     line-height: 1.2;
+    font-family: 'RC';
+
 }
 
 main {
@@ -158,7 +169,7 @@ figcaption {
 }
 
 .site-logo {
-    height: 120px;
+    height: 80px;
 }
 
 @media print {
@@ -188,7 +199,8 @@ figcaption {
 
     h1, h2 {
         background-color: var(--accent-bg-color);
-        border-left: 3rem solid var(--border-color);
+        /*border-left: 3rem solid var(--border-color);*/
+        box-shadow: 10px 10px var(--border-color);
         padding: 2rem;
     }
 

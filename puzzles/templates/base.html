@@ -53,7 +53,7 @@
                     {% translate "FAQ" %}
                 </a>                
                 <a{% if '/team' in request.path %} class="selected-tab"{% endif %} href="{% url 'teams' %}">
-                    {% translate "LEADERBOARD" %}
+                    {% translate "TEAMS" %}
                 </a>
             </div>
         </span>
@@ -63,7 +63,7 @@
         <div class="top-right-actions">
         {% if request.user.is_authenticated %}
             {% if team %}
-            <a class="team-name" href="{% url 'team' team.team_name %}">{{ request.user }}</a>
+            <a class="team-name" href="{% url 'team' team.team_name %}">Squad {{ request.user }}</a>
             {% else %}
             {{ request.user }}
             {% endif %}

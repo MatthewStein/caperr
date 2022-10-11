@@ -12,13 +12,6 @@
 <a href="{% url 'edit-team' %}" class="btn">{% translate "Edit team members" %}</a>
 <a href="{% url 'password_change' %}" class="btn">{% translate "Change password" %}</a>
 {% if not hunt_is_over %}
-<a href="javascript:toggleTimeUnlocks()" class="btn">
-    {% if team.allow_time_unlocks %}
-    {% translate "Disable time unlocks" %}
-    {% else %}
-    {% translate "Enable time unlocks" %}
-    {% endif %}
-</a>
 <form method="post" id="time_unlocks" style="display: none">
     {% csrf_token %}
     <input type="hidden" name="enable" value="{{ team.allow_time_unlocks|yesno:'false,true' }}">
