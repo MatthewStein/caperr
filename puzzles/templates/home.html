@@ -4,19 +4,42 @@
 
 {% block content %}
 <style>
-.hero-cover {
+.hero-cover, .hero-cover-square{
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px 0 20px 0;
 }
 .subtitle {
     font-size: 1.2em;
 }
 </style>
 <h2>Welcome to Caperr!</h2>
-<p class="subtitle">We find <i>super gigs</i> for <i>superheroes</i>. If you are ready to help solve the world's puzzles and defeat some evil, we invite you to join us.</p>
-{% format_time start_time "DATE_AT_TIME" as hunt_start %}
-<p class="subtitle">You'll receive your first Assignment on <i>{{ hunt_start }}</i>.</p>
 <img class="hero-cover" src="/static/images/hero-cover.png">
+<div class="info-row">
+    <div>
+        <h4>What</h4>
+        <div class="info-desc">
+            <p>Here at Caperr, we find <i>super gigs</i> for <i>superheroes</i>.</p>
+            <p>If you're ready to help solve the world's puzzles and defeat some evil, we invite you to join us.</p>
+        </div>
+    </div>
+    <div>
+        <h4>{% translate "When" %}</h4>
+        <div class="info-desc">
+            {% format_time start_time "DATE_AT_TIME" as hunt_start %}
+            <p>You'll receive your first Assignment (puzzle) on <i>{{ hunt_start }}</i>.</p>
+            <p>A new Assignment will be released every Wednesday over the course of 5 weeks.</p>
+        </div>
+    </div>
+    <div>
+        <h4>{% translate "Who" %}</h4>
+        <div class="info-desc">
+            <p>This is a puzzle hunt for the ESG team at PwC.</p>
+            <p>It is designed and run by <a href="https://instagram.com/enigmida" target="_blank">Enigmida.</a></p>
+            <p>For more information, visit our <a href="/faq">FAQ</a>.</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
