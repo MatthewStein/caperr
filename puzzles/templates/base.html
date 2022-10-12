@@ -50,10 +50,12 @@
                 {% endif %}
                 <a{% if request.path == '/faq' %} class="selected-tab"{% endif %} href="{% url 'faq' %}">
                     {% translate "FAQ" %}
-                </a>                
+                </a>
+                {% if team %}                
                 <a{% if '/team' in request.path %} class="selected-tab"{% endif %} href="{% url 'teams' %}">
                     {% translate "TEAMS" %}
                 </a>
+                {% endif %}
             </div>
         </span>
         <div class="top-left-actions">
