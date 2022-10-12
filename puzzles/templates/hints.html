@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-<style>
+<!-- <style>
 .hint-error { margin-bottom: 4rem; }
 .hint-hidden { display: none; }
 .hint-table td {
@@ -35,9 +35,50 @@
     opacity: 0.5;
     white-space: initial;
 }
+</style> -->
+
+<style>
+details > summary { 
+  background-color: rgb(0,85,170,0.3);
+  cursor: pointer;
+  padding: .5rem 1rem;
+  margin-bottom:  .5rem;
+}
+
+details summary > * {
+  display: inline;
+}
 </style>
 
-<h1>{% blocktranslate with puzzle_name=puzzle.name %}Hints: {{ puzzle_name }}{% endblocktranslate %}</h1>
+<h1>Hints</h1>
+
+<h4>Puzzle #1: Trash Monster</h4>
+<details>
+<summary>Getting started #1</summary>
+<p>Start by solving the clues in the Recycled Items Output section. The numbers in parentheses indicate the lengths of each answers, and the clues are listed alphabetically by answer.</p>
+</details>
+
+<details>
+<summary>Getting started #2</summary>
+<p>Work backwards from the Output answers, trying to reverse the transformations into objects found in the Trash Monster. Transformations 1 and 3 are simpler ones to get started with.</p>
+</details>
+
+<details>
+<summary>Using the transformations</summary>
+<p>Examples of each transformation: (1) PRESENT -> SERPENT, (2) TRAIN -> IRRITANT, (3) CHAIR -> CHAI, (4) CARROT -> CAR + ROT, (5) GRILL -> GUERILLA</p>
+</details>
+
+<details>
+<summary>I've found all the items... now what?</summary>
+<p>Once you’ve identified all the recycled items, pay attention to where they’re located in the Trash Monster.</p>
+</details>
+
+<br>
+<h4>Still stuck?</h4>
+<p>Send us an email at <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>describing what you've tried and where you're stuck, and we'll respond directly to you.</p>
+
+
+<!-- <h1>{% blocktranslate with puzzle_name=puzzle.name %}Hints: {{ puzzle_name }}{% endblocktranslate %}</h1>
 
 <main>
     {% if not hunt_is_over %}
@@ -166,6 +207,6 @@
         </tr>
         {% endfor %}
     </table>
-    {% endif %}
+    {% endif %} -->
 </main>
 {% endblock %}
