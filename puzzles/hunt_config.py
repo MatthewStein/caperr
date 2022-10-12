@@ -29,8 +29,8 @@ HUNT_START_TIME = timezone.make_aware(datetime.datetime(
     year=2022,
     month=10,
     day=12,
-    hour=12,
-    minute=0,
+    hour=11,
+    minute=30,
 ))
 HUNT_END_TIME = timezone.make_aware(datetime.datetime(
     year=2022,
@@ -65,17 +65,17 @@ HINT_TIME = HUNT_START_TIME + datetime.timedelta(days=1)
 # many hints they would get, since we advertised that there would be intro
 # hints or extra hints released at this or that time. Feel free to change the
 # logic in models.py to suit your needs.)
-TEAM_AGE_BEFORE_HINTS = datetime.timedelta(days=1)
+TEAM_AGE_BEFORE_HINTS = datetime.timedelta(days=0)
 # If set, a team's first N hints are usable only on puzzles in the intro round.
 # (They don't go away or convert into regular hints after some time; if a team
 # doesn't use them, they can still use regular hints they receive afterward.)
-INTRO_HINTS = 2
+INTRO_HINTS = -1
 # If this is enabled, a team may only have one open hint, and must wait for it
 # to be answered before submitting another request.
 ONE_HINT_AT_A_TIME = True
 
 # These options are exactly analogous to the above.
-FREE_ANSWERS_ENABLED = False
+FREE_ANSWERS_ENABLED = True
 FREE_ANSWERS_PER_DAY = (1, 2, 2)
 FREE_ANSWER_TIME = HUNT_START_TIME + datetime.timedelta(days=6)
 TEAM_AGE_BEFORE_FREE_ANSWERS = datetime.timedelta(days=3)
