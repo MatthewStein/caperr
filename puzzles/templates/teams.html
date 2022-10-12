@@ -35,7 +35,7 @@
                 <a href="team/{{ team.team_name|urlencode }}">{{ team.team_name }}</a>
                 {# {{ team.team_name }} #}
                 {% if is_superuser %}
-                    (<a href="{% url 'impersonate-start' team.team.user_id %}">impersonate</a>)
+                    (<a href="{% url 'impersonate-start' team.user_id %}">impersonate</a>)
                 {% endif %}
             </td>
             {% if hunt_has_started %}
