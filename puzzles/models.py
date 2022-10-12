@@ -453,36 +453,36 @@ class Team(models.Model):
         metas_solved = []
         puzzles_unlocked = collections.OrderedDict()
         unlocks = []
-        for puzzle in context.all_puzzles:
-            unlocked_at = None
-            if 0 <= puzzle.unlock_hours and (
-                puzzle.unlock_hours == 0 or
-                not context.team or
-                context.team.allow_time_unlocks):
-                unlock_time = context.start_time + datetime.timedelta(hours=puzzle.unlock_hours)
-                if unlock_time <= context.now:
-                    unlocked_at = unlock_time
-            if context.hunt_is_prereleased or context.hunt_is_over:
-                unlocked_at = context.start_time
-            elif context.team:
-                (global_solves, local_solves) = context.team.main_round_solves
-                if 0 <= puzzle.unlock_global <= global_solves and (global_solves or any(metas_solved)):
-                    unlocked_at = context.now
-                if 0 <= puzzle.unlock_local <= local_solves[puzzle.round.slug]:
-                    unlocked_at = context.now
-                if puzzle.slug == META_META_SLUG and all(metas_solved):
-                    unlocked_at = context.now
-                if puzzle.is_meta:
-                    metas_solved.append(puzzle.id in context.team.solves)
-                if puzzle.id in context.team.db_unlocks:
-                    unlocked_at = context.team.db_unlocks[puzzle.id].unlock_datetime
-                elif unlocked_at:
-                    unlocks.append(Team.unlock_puzzle(context, puzzle, unlocked_at))
-            if unlocked_at:
-                puzzles_unlocked[puzzle] = unlocked_at
-        if unlocks:
-            PuzzleUnlock.objects.bulk_create(unlocks, ignore_conflicts=True)
-        return puzzles_unlocked
+        # for puzzle in context.all_puzzles:
+        #     unlocked_at = None
+        #     if 0 <= puzzle.unlock_hours and (
+        #         puzzle.unlock_hours == 0 or
+        #         not context.team or
+        #         context.team.allow_time_unlocks):
+        #         unlock_time = context.start_time + datetime.timedelta(hours=puzzle.unlock_hours)
+        #         if unlock_time <= context.now:
+        #             unlocked_at = unlock_time
+        #     if context.hunt_is_prereleased or context.hunt_is_over:
+        #         unlocked_at = context.start_time
+        #     elif context.team:
+        #         (global_solves, local_solves) = context.team.main_round_solves
+        #         if 0 <= puzzle.unlock_global <= global_solves and (global_solves or any(metas_solved)):
+        #             unlocked_at = context.now
+        #         if 0 <= puzzle.unlock_local <= local_solves[puzzle.round.slug]:
+        #             unlocked_at = context.now
+        #         if puzzle.slug == META_META_SLUG and all(metas_solved):
+        #             unlocked_at = context.now
+        #         if puzzle.is_meta:
+        #             metas_solved.append(puzzle.id in context.team.solves)
+        #         if puzzle.id in context.team.db_unlocks:
+        #             unlocked_at = context.team.db_unlocks[puzzle.id].unlock_datetime
+        #         elif unlocked_at:
+        #             unlocks.append(Team.unlock_puzzle(context, puzzle, unlocked_at))
+        #     if unlocked_at:
+        #         puzzles_unlocked[puzzle] = unlocked_at
+        # if unlocks:
+        #     PuzzleUnlock.objects.bulk_create(unlocks, ignore_conflicts=True)
+        return context.all_puzzles
 
     @staticmethod
     def unlock_puzzle(context, puzzle, unlocked_at):
