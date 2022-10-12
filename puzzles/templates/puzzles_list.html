@@ -7,11 +7,6 @@
         </td>
         <td>
             <a href="{% url 'puzzle' data.puzzle.slug %}">
-                {% if data.puzzle.is_meta %}
-                <div class="puzzles-new">{% translate "meta" %}</div>
-                {% elif data.new %}
-                <div class="puzzles-new">{% translate "new!" %}</div>
-                {% endif %}
                 {{ data.puzzle.name }}
             </a>
         </td>

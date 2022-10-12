@@ -1,19 +1,38 @@
 {% extends "base.html" %}
 {% load i18n %}
 {% block content %}
+<style>
+    .earth-puzzle-block {
+        width: 100%;
+        min-height: 150px;
+        padding: 15px 0 15px 15px;
+        background-color: #4bb24b;
+        box-shadow: 10px 10px #32620e;
+    }
+    .tm {
+        width: 60%;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
 
-<!-- {% if hunt_is_prereleased %}
-<h3 style="text-align: center">
-    {% translate "You are a pre-release testsolver, so you may be seeing puzzles that are locked for the general public. Please be careful!" %}
-</h3>
-{% endif %} -->
+<h1>Superhero Assignments</h1>
 
-<h1>Available Superhero Gigs</h1>
-
-<table class="puzzles-list">
+<!-- <div class="puzzles-list">
 {% for round in rounds.values %}
-    {% include 'puzzles_list.html' with round=round %}
+{% for data in round.puzzles %}
+    <a href="{% url 'puzzle' data.puzzle.slug %}">
+        {{ data.puzzle.name }}
+    </a>
 {% endfor %}
-</table>
+{% endfor %}
+</div> -->
+
+<div class="earth-puzzle-block">
+    <p>10/12/2022</p>
+    <p style="font-size:1.2em;">A Trash Monster has attacked Landfillipsburg!</p>
+    <a class="btn" href="/puzzle/trash-monster">Open Puzzle</a>
+</div>
 
 {% endblock %}
