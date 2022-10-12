@@ -11,11 +11,11 @@
     margin-right: auto;
     padding: 20px 0 20px 0;
 }
-.subtitle {
-    font-size: 1.2em;
-}
 </style>
 <h2>Welcome to Caperr!</h2>
+{% if team and hunt_has_started %}
+<p>Head on over to the <a href="/puzzles">puzzles page</a> to view your current Assignments.</p>
+{% endif %}
 <img class="hero-cover" src="/static/images/hero-cover.png">
 <div class="info-row">
     <div>
@@ -28,9 +28,7 @@
     <div>
         <h4>{% translate "When" %}</h4>
         <div class="info-desc">
-            {% format_time start_time "DATE_AT_TIME" as hunt_start %}
-            <p>You'll receive your first Assignment (puzzle) on <i>{{ hunt_start }}</i>.</p>
-            <p>A new Assignment will be released every Wednesday over the course of 5 weeks.</p>
+            <p>The game runs from <i>October 12, 2022</i> through <i>November 11, 2022</i>, with a new Assignment (puzzle) release every Wednesday at noon EST.</p>
         </div>
     </div>
     <div>

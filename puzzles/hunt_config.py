@@ -35,7 +35,7 @@ HUNT_START_TIME = timezone.make_aware(datetime.datetime(
 HUNT_END_TIME = timezone.make_aware(datetime.datetime(
     year=2022,
     month=11,
-    day=16,
+    day=9,
     hour=12,
     minute=0,
 ))
