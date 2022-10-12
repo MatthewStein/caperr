@@ -64,7 +64,7 @@
         <div class="top-right-actions">
         {% if request.user.is_authenticated %}
             {% if team %}
-            <a class="team-name" href="{% url 'team' team.team_name %}">Squad {{ request.user }}</a>
+            <a class="team-name" href="{% url 'team' team.team_name %}">Team {{ request.user }}</a>
             {% else %}
             {{ request.user }}
             {% endif %}
