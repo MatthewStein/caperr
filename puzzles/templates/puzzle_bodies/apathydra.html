@@ -1,0 +1,315 @@
+{% extends "puzzle.html" %}
+{% block puzzle-body-md %}
+<style>
+.weapons, .head6, .head9 {
+	width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+.mono p {
+	margin-bottom: 0rem;
+}
+.mono {
+	font-family: 'Roboto Mono', monospace;
+	margin-bottom: 2rem;
+}
+
+table, tr, td {
+	border: 1px solid;
+}
+td {
+	text-align: center;
+	vertical-align: center;
+	padding: 10px !important;
+}
+.head8 td {
+	width: 50%;
+}
+.green {
+	background-color: rgb(1, 154, 1);
+	color: white;
+}
+.yellow {
+	background-color: rgb(255, 196, 37);
+	color: white;
+}
+.blue {
+	background-color: rgb(5,195,221);
+}
+.sudoku td {
+	height: 20px;
+	width: 20px;
+}
+.sudoku tr {
+	border-left: 3px solid;
+	border-right: 3px solid;
+}
+.sudoku td:nth-child(3) {
+	border-right: 3px solid;
+}
+@media screen and (min-width: 961px) {
+  	.row {
+		display: flex;
+	}
+	.column {
+		flex: 50%;
+		padding: 5px;
+	}
+	.head9 {
+		width: 60%;
+	}
+}
+
+</style>
+
+<p>Amidst rising sea levels, a treacherous 9-headed hydra has appeared in the Arctic. Except this monster seems incredibly... bored? Reports are coming in that its yawns of disinterest can be heard from miles away. Locals are said to be calling it the Apathydra.</p>
+<p>Heroes, to accomplish the herculean task of slaying this beast, you will need to sever all 9 of the Apathydra's heads at once. To do this, solve the 9 minipuzzles, determine which weapon is best suited for which head, and ultimately reveal what will deliver the final blow.</p>
+<p>The answer to each of the 9 Head minipuzzles is a single word. You can use the answer checker to confirm these intermediate answers prior to submitting the final answer.</p>
+<p>This <a href="http://puzzledpint.com/files/2415/7835/9513/CodeSheet-201912.pdf" target="_blank">code sheet</a> may come in handy for some of the minipuzzles.</p>
+
+<h3>Weapons</h3>
+<img class="weapons" src="../static/images/apathydra/weapons.png" alt="">
+
+<h3>Head 1</h3>
+<p>We researched the history of the creature in a duty old tome. Its pages were strangely numbered, counting down from tree hundred. We learned of all sorts of wondrous mythical beasts—a pink dragon that ruled the skies, a centaur made of ice cram, a unicorn that could travel through time. Near the back of the book, we found a few pages camped together with a strange vise, like something we might find in a wood shop. Here, we learned how we might defect the attacks of the Apathydra.</p>
+
+<h3>Head 2</h3>
+<p>A letter in the Nominally Active Telekinesis Order's alphabet (or something like that...) hides in each of the following:</p>
+<ul>
+<li>the Hoosier racing track</li>
+<li>metropolitan government organizations</li>
+<li>a nest of Eastern screech owls</li>
+<li>along the main diagonal</li>
+<li>books by Sasha Smith, Igor Romanov, E.M. Bernhard, et al.</li>
+</ul>
+
+<h3>Head 3</h3>
+<p>When deciding what to call the Apathydra, we first thought her name could be Sheila. Or maybe Sue Doku…</p>
+<table class="sudoku">
+<tr style="border-top:3px solid;">
+	<td>S</td>
+	<td>I</td>
+	<td></td>
+	<td>H</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>H</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td class="blue">3</td>
+	<td>L</td>
+</tr>
+<tr style="border-top:3px solid;">
+	<td>E</td>
+	<td></td>
+	<td>S</td>
+	<td class="blue">1</td>
+	<td></td>
+	<td class="blue">4</td>
+</tr>
+<tr>
+	<td>I</td>
+	<td></td>
+	<td>H</td>
+	<td>E</td>
+	<td>A</td>
+	<td></td>
+</tr>
+<tr style="border-top:3px solid;">
+	<td>L</td>
+	<td></td>
+	<td></td>
+	<td class="blue">2</td>
+	<td>H</td>
+	<td></td>
+</tr>
+<tr style="border-bottom:3px solid;">
+	<td>A</td>
+	<td></td>
+	<td></td>
+	<td>S</td>
+	<td></td>
+	<td>E</td>
+</tr>
+</table>
+
+<h3>Head 4</h3>
+<p>We found 10 creatures amongst the sea of letters...</p>
+<div class="mono">
+<p>F C A M E L B R E B T A</p>
+<p>R R K H N O X C E E E N</p>
+<p>I O S N M T I O T E T I</p>
+<p>S C G H O C M D R T L Q</p>
+<p>R O O S T E R K C L K C</p>
+<p>K D Y E H S T O X E I R</p>
+<p>U I R T Q M A D E R G O</p>
+<p>M L O P O T J H A B T D</p>
+<p>C E L I V L S A R T Z O</p>
+<p>H T L I R D N M R G O E</p>
+<p>C S H R E W U S S L G J</p>
+<p>A I N S R X F T O A D K</p>
+<p>O L S A Z M U E N R E L</p>
+<p>S N Z D K R O R Y T E M</p>
+<p>T U R T L E P O O S R N</p>
+</div>
+
+<h3>Head 5</h3>
+<p>While hunting for the <b>HYDR<span class="yellow">A</span></b>, we sought help from a <b>TIT<span class="yellow">A</span>N</b> who was rumored to know a powerful <b>S<span class="yellow">PEL</span>L</b>.</p>
+<p>As the prophecy goes: in the year 2021, a simple word game will come into full <b>B<span class="green">L</span>OOM</b> and be on <b>F<span class="green">L</span><span class="yellow">E</span>EK</b> throughout the world.</p>
+
+<h3>Head 6</h3>
+<p>Once we connect the dots correctly by matching items of the same type, we should look at what's left...</p>
+<img class="head6" src="../static/images/apathydra/head6.png" alt="">
+
+<h3>Head 7</h3>
+<p>Huh. This grid looks the same when you look at it the other way, too.</p>
+<ol>
+	<li>Average</li>
+	<li>One, in Berlin</li>
+	<li>Palindromic Disney princess</li>
+	<li>Cool, in slang</li>
+</ol>
+
+<table>
+<tr>
+	<td class="blue"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td class="blue"></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td class="blue"></td>
+	<td></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td class="blue"></td>
+</tr>
+</table>
+
+<h3>Head 8</h3>
+<p>Maybe I'm not seeing properly, but I think some of these items aren't quite right... Once we dot those out, we should be able to feel around and decipher a hidden word</p>
+
+<div class="head8">
+<div class="row">
+<table class="column">
+<caption>Actually Vegetables</caption>
+<tr>
+	<td>Tomato</td>
+	<td>Pumpkin</td>
+</tr>
+<tr>
+	<td>Eggplant</td>
+	<td>Asparagus</td>
+</tr>
+<tr>
+	<td>Broccoli</td>
+	<td>Cauliflower</td>
+</tr>
+</table>
+
+<table class="column">
+<caption>Shades of Red</caption>
+<tr>
+	<td>Crimson</td>
+	<td>Lime</td>
+</tr>
+<tr>
+	<td>Periwinkle</td>
+	<td>Vermillion</td>
+</tr>
+<tr>
+	<td>Garnet</td>
+	<td>Carmine</td>
+</tr>
+</table>
+</div>
+
+<div class="row">
+<table class="column">
+<caption>Periodic Elements</caption>
+<tr>
+	<td>Diamond</td>
+	<td>Brass</td>
+</tr>
+<tr>
+	<td>Adamantium</td>
+	<td>Bronze</td>
+</tr>
+<tr>
+	<td>Gold</td>
+	<td>Silver</td>
+</tr>
+</table>
+
+<table class="column">
+<caption>Fish</caption>
+<tr>
+	<td>Whale</td>
+	<td>Eel</td>
+</tr>
+<tr>
+	<td>Starfish</td>
+	<td>Dolphin</td>
+</tr>
+<tr>
+	<td>Crayfish</td>
+	<td>Shark</td>
+</tr>
+</table>
+</div>
+
+<div class="row">
+<table class="column">
+<caption>Marvel Characters</caption>
+<tr>
+	<td>Green Arrow</td>
+	<td>Black Widow</td>
+</tr>
+<tr>
+	<td>The Hulk</td>
+	<td>Spider-Man</td>
+</tr>
+<tr>
+	<td>Batman</td>
+	<td>Wonder Woman</td>
+</tr>
+</table>
+
+<table class="column">
+<caption>Judges on The Voice</caption>
+<tr>
+	<td>Simon Cowell</td>
+	<td>Gwen Stefani</td>
+</tr>
+<tr>
+	<td>Miley Cyrus</td>
+	<td>Justin Bieber</td>
+</tr>
+<tr>
+	<td>Blake Shelton</td>
+	<td>John Legend</td>
+</tr>
+</table>
+</div>
+</div>
+
+<h3>Head 9</h3>
+<p>Once we bridge the gaps, we should take a look at where we had to double up...</p>
+<p>NOTE: Consult <a href="https://www.hashi.info">this page</a> if you're new to Hashi (bridge) puzzles.</p>
+<img class="head9" src="../static/images/apathydra/head9.png" alt="">
+
+{% endblock %}

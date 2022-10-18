@@ -3,7 +3,7 @@
   fields:
     name: Assignments
     slug: assignments
-    meta: 1
+    meta: 2
 - model: puzzles.Puzzle
   pk: 1
   fields:
@@ -14,3 +14,13 @@
     round: 1
     unlock_global: 0
     unlock_local: 0
+- model: puzzles.Puzzle
+  pk: 2
+  fields:
+    name: The Apathydra
+    slug: apathydra
+    body_template: apathydra.html
+    answer: SEACHANGE
+    round: 1
+    unlock_global: 0
+    unlock_local: 1
