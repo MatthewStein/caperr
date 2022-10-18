@@ -2,12 +2,19 @@
 {% load i18n %}
 {% block content %}
 <style>
-    .earth-puzzle-block {
+    .puzzle {
         width: 100%;
         min-height: 150px;
         padding: 15px 0 15px 15px;
+        margin-bottom: 30px;
+    }
+    .earth-puzzle-block {
         background-color: #4bb24b;
         box-shadow: 10px 10px #32620e;
+    }
+    .water-puzzle-block {
+        background-color: rgb(58, 129, 209);
+        box-shadow: 10px 10px rgb(40, 59, 199);
     }
     .tm {
         width: 60%;
@@ -19,17 +26,21 @@
 
 <h1>Superhero Assignments</h1>
 
-<!-- <div class="puzzles-list">
+<!-- <table class="puzzles-list">
 {% for round in rounds.values %}
-{% for data in round.puzzles %}
-    <a href="{% url 'puzzle' data.puzzle.slug %}">
-        {{ data.puzzle.name }}
-    </a>
+    {% include 'puzzles_list.html' with round=round %}
 {% endfor %}
-{% endfor %}
+</table> -->
+<h3>Mission Briefing</h3>
+<p>Dozens of elemental monsters have been appearing around the world, connected to various climate-related disasters. We have reason to believe that a supervillain may be behind this all. For your first set of gigs at Caperr, flex your puzzle-solving skills and bring down these monsters. Along the way, you may discover information that can help us identify and defeat this yet unknown supervillain.</p>
+
+<!-- <div class="puzzle water-puzzle-block">
+    <p>10/19/2022</p>
+    <p style="font-size:1.2em;">The Apathydra has risen from the ocean!</p>
+    <a class="btn" href="/puzzle/apathydra">Open Puzzle</a>
 </div> -->
 
-<div class="earth-puzzle-block">
+<div class="puzzle earth-puzzle-block">
     <p>10/12/2022</p>
     <p style="font-size:1.2em;">A Trash Monster has attacked Landfillipsburg!</p>
     <a class="btn" href="/puzzle/trash-monster">Open Puzzle</a>

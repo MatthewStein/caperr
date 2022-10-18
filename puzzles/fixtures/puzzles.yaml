@@ -10,7 +10,7 @@
     name: The Trash Monster
     slug: trash-monster
     body_template: trash-monster.html
-    answer: HIDDENGEMS
+    answer: HIDDEN GEMS
     round: 1
     unlock_global: 0
     unlock_local: 0
@@ -20,7 +20,7 @@
     name: The Apathydra
     slug: apathydra
     body_template: apathydra.html
-    answer: SEACHANGE
+    answer: SEA CHANGE
     round: 1
     unlock_global: 0
     unlock_local: 1
