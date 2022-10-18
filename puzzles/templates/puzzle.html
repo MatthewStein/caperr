@@ -9,12 +9,12 @@
 
 {% block top-left-actions %}
 {% if team and not hunt_is_closed %}
-<a href="{% url 'solve' puzzle.slug %}" class="btn">{% translate "Call in an answer" %}</a>
+<a href="{% url 'solve' puzzle.slug %}" class="btn">{% translate "Check answer" %}</a>
 {% if not puzzle.is_meta and num_free_answers_remaining > 0 and puzzle_answer is None %}
 <a href="{% url 'free-answer' puzzle.slug %}" class="btn">{% translate "Use free answer" %}</a>
 {% endif %}
 {% endif %}
-<a href="{% url 'hints' puzzle.slug %}" class="btn">View hints</a>
+<a href="{% url 'hints' puzzle.slug %}" class="btn">Hints</a>
 {% if hunt_is_closed or not team and hunt_is_over %}
 <a href="{% url 'post-hunt-solve' puzzle.slug %}" class="btn">{% translate "Check your answer spoiler-free" %}</a>
 {% endif %}
