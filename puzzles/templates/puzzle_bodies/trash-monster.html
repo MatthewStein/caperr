@@ -1,9 +1,15 @@
 {% extends "puzzle.html" %}
 {% block puzzle-body-md %}
 <style>
-	#tm {
-		width: 100%;
-	}
+#tm {
+	width: 100%;
+}
+.transformation-hint {
+	background: rgb(58, 129, 209);
+	padding: 5px;
+	border-radius: 10px;
+	visibility: hidden;
+}
 </style>
 
 <p>BREAKING NEWS!! Reports indicate that a colossal Trash Monster has emerged in Landfillipsburg and is wreaking odorous havoc on the surrounding region. Superheroes: we need your help to bring down this creature!</p>
@@ -35,57 +41,71 @@
 </ol>
 
 <h3>Recycled Items Output</h3>
+<button class="btn transform-hints">Show Transformation Hints</button>
 <ul>
-<li>More irate (7)</li>
-<li>Tree that gives its name to a Colorado ski town (5)</li>
-<li>Daisy-like flower (5)</li>
-<li>He held the world on his shoulders (5)</li>
-<li>Broad st. (3)</li>
-<li>Song or sunscreen brand (6 4)</li>
-<li>Fill in the ___ (5)</li>
-<li>B in FANBOYS (3)</li>
-<li>Train unit (3)</li>
-<li>Spiced tea (4)</li>
-<li>Word after skeleton or flight (4)</li>
-<li>Reverberates (6)</li>
-<li>Event one might buy a ring for (10)</li>
-<li>Indefinitely long time span (3)</li>
-<li>Slowly wear away (5)</li>
-<li>UFO pilot, perhaps (2)</li>
-<li>"Aha!" (6)</li>
-<li>Kind of warfare (8)</li>
-<li>Run-down dwelling (5)</li>
-<li>Cause of a rash (8)</li>
-<li>Magazine releases (6)</li>
-<li>Seinfeld's neighbor (6)</li>
-<li>Actress Gish (7)</li>
-<li>Secure (4)</li>
-<li>Something you might drop (3)</li>
-<li>Plug-in place (6)</li>
-<li>Quantity produced (6)</li>
-<li>Hurtful exclamation (2)</li>
-<li>Bread, in Paris (4)</li>
-<li>Body part or tree (4)</li>
-<li>Persecution delusion (8)</li>
-<li>Sir Fleming's discovery (10)</li>
-<li>Truffle hunter (3)</li>
-<li>___ of Paris (7)</li>
-<li>Rocket of film (7)</li>
-<li>Raised line (5)</li>
-<li>Decay (3)</li>
-<li>Propel a boat (3)</li>
-<li>A scramble to find gold, say (4)</li>
-<li>Most impudent or most covered in ketchup? (8)</li>
-<li>Biblical tempter (7)</li>
-<li>Most brainy (8)</li>
-<li>Dining room fixture (5)</li>
-<li>Mexican standard fare (4)</li>
-<li>Lung infection, for short (2)</li>
-<li>Toto's breed (7)</li>
-<li>Partner of fro (2)</li>
-<li>Large amount (3)</li>
-<li>It might get knocked out of you (4)</li>
-<li>It's made of letters (4)</li>
+<li>More irate (7) <span class="transformation-hint">Transformation #1</span></li>
+<li>Tree that gives its name to a Colorado ski town (5) <span class="transformation-hint">Transformation #5</span></li>
+<li>Daisy genus (5) <span class="transformation-hint">Transformation #4</span></li>
+<li>He held the world on his shoulders (5) <span class="transformation-hint">Transformation #2</span></li>
+<li>Broad st. (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>Song or sunscreen brand (11) <span class="transformation-hint">Transformation #2</span></li>
+<li>Fill in the ___ (5) <span class="transformation-hint">Transformation #4</span></li>
+<li>B in FANBOYS (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>Train unit (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>Spiced tea (4) <span class="transformation-hint">Transformation #3</span></li>
+<li>Word after skeleton or flight (4) <span class="transformation-hint">Transformation #3</span></li>
+<li>Reverberates (6) <span class="transformation-hint">Transformation #5</span></li>
+<li>Event one might buy a ring for (10) <span class="transformation-hint">Transformation #2</span></li>
+<li>Indefinitely long time span (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>Slowly wear away (5) <span class="transformation-hint">Transformation #5</span></li>
+<li>UFO pilot, perhaps (2) <span class="transformation-hint">Transformation #4</span></li>
+<li>"Aha!" (6) <span class="transformation-hint">Transformation #5</span></li>
+<li>Kind of warfare (8) <span class="transformation-hint">Transformation #5</span></li>
+<li>Run-down dwelling (5) <span class="transformation-hint">Transformation #3</span></li>
+<li>Cause of a rash (8) <span class="transformation-hint">Transformation #2</span></li>
+<li>Magazine releases (6) <span class="transformation-hint">Transformation #3</span></li>
+<li>Seinfeld's neighbor (6) <span class="transformation-hint">Transformation #1</span></li>
+<li>Actress Gish (7) <span class="transformation-hint">Transformation #2</span></li>
+<li>Secure (4) <span class="transformation-hint">Transformation #3</span></li>
+<li>Something you might drop (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>Plug-in place (6) <span class="transformation-hint">Transformation #5</span></li>
+<li>Quantity produced (6) <span class="transformation-hint">Transformation #5</span></li>
+<li>Hurtful exclamation (2) <span class="transformation-hint">Transformation #4</span></li>
+<li>Bread, in Paris (4) <span class="transformation-hint">Transformation #4</span></li>
+<li>Body part or tree (4) <span class="transformation-hint">Transformation #1</span></li>
+<li>Persecution delusion (8) <span class="transformation-hint">Transformation #5</span></li>
+<li>Sir Fleming's discovery (10) <span class="transformation-hint">Transformation #2</span></li>
+<li>Truffle hunter (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>___ of Paris (7) <span class="transformation-hint">Transformation #1</span></li>
+<li>Rocket of film (7) <span class="transformation-hint">Transformation #2</span></li>
+<li>Raised line (5) <span class="transformation-hint">Transformation #3</span></li>
+<li>Decay (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>Propel a boat (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>A scramble to find gold, say (4) <span class="transformation-hint">Transformation #4</span></li>
+<li>Most impudent or most covered in ketchup? (8) <span class="transformation-hint">Transformation #1</span></li>
+<li>Biblical tempter (7) <span class="transformation-hint">Transformation #1</span></li>
+<li>Most brainy (8) <span class="transformation-hint">Transformation #1</span></li>
+<li>Dining room fixture (5) <span class="transformation-hint">Transformation #3</span></li>
+<li>Mexican standard fare (4) <span class="transformation-hint">Transformation #1</span></li>
+<li>Lung infection, for short (2) <span class="transformation-hint">Transformation #4</span></li>
+<li>Toto's breed (7) <span class="transformation-hint">Transformation #2</span></li>
+<li>Partner of fro (2) <span class="transformation-hint">Transformation #4</span></li>
+<li>Large amount (3) <span class="transformation-hint">Transformation #4</span></li>
+<li>It might get knocked out of you (4) <span class="transformation-hint">Transformation #4</span></li>
+<li>It's made of letters (4) <span class="transformation-hint">Transformation #3</span></li>
 <ul>
+
+<script>
+$(".transform-hints").click(function(){
+	if ($(".transformation-hint").css("visibility") == "hidden"){
+		$(".transformation-hint").css("visibility", "visible");
+		$(".transform-hints").html("Hide Transformation Hints");
+	} else {
+		$(".transformation-hint").css("visibility", "hidden");
+		$(".transform-hints").html("Show Transformation Hints");
+	}
+	
+});
+</script>
 
 {% endblock %}
