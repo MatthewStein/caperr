@@ -3,7 +3,7 @@
   fields:
     name: Assignments
     slug: assignments
-    meta: 2
+    meta: 4
 - model: puzzles.Puzzle
   pk: 1
   fields:
@@ -24,3 +24,23 @@
     round: 1
     unlock_global: 0
     unlock_local: 1
+- model: puzzles.Puzzle
+  pk: 3
+  fields:
+    name: The Wild Fire Dragon
+    slug: wildfiredragon
+    body_template: wildfiredragon.html
+    answer: SMOKESCREEN
+    round: 1
+    unlock_global: 0
+    unlock_local: 2
+- model: puzzles.Puzzle
+  pk: 4
+  fields:
+    name: The Smogre
+    slug: smogre
+    body_template: smogre.html
+    answer: CARBON FILTER
+    round: 1
+    unlock_global: 0
+    unlock_local: 3

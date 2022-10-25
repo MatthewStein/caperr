@@ -1,0 +1,248 @@
+{% extends "puzzle.html" %}
+{% block puzzle-body-md %}
+<style>
+.question, .answer {
+	/*background-color: rgb(3,10,174);*/
+	background-image: linear-gradient(to bottom right, rgb(3,10,174), blue);
+	color: white;
+	padding: 15px;
+	margin: 5px;
+	text-align: center;
+	border-radius: 50px;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+.question {
+	flex: 100%;
+}
+.letter {
+	color: rgb(190, 109, 62);
+}
+.answer {
+	flex: 50%;
+}
+.item {
+	margin-bottom: 40px;
+}
+</style>
+
+<p>Raging brush fires have been appearing all around the world with increasing frequency and severity. Empowered by the flames, an enigmatic Wild Fire Dragon has emerged after centuries dormant, leaving us with more questions than answers.</p>
+<p>But where better to find answers than on a classic quiz show!</p>
+<p>Once you've determined the answers, you may need to look at how they start to figure out another way to solve the quiz. Only then can you bring in the money and reveal the Wild Fire Dragon's secret defense.</p>
+
+<h3>Questions</h3>
+
+<div class="item">
+<div class="row">
+<p class="question">For $10, which of these was President during the end of a World War?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Ronald Reagan</p>
+<p class="answer"><span class="letter">B: </span>Woodrow Wilson</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Abraham Lincoln</p>
+<p class="answer"><span class="letter">D: </span>Franklin D. Roosevelt</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $5, which of these is the surname of an American winner of the Nobel Prize in Literature?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Eliot</p>
+<p class="answer"><span class="letter">B: </span>Roth</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Angelou</p>
+<p class="answer"><span class="letter">D: </span>Dos Passos</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $2, which of these thrillers was directed by Alfred Hitchcock, master of suspense?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Witness for the Prosecution</p>
+<p class="answer"><span class="letter">B: </span>Dial M for Murder</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Face/Off</p>
+<p class="answer"><span class="letter">D: </span>The Manchurian Candidate</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $1, which of these is a real US political scandal?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Great Turkey Tragedy</p>
+<p class="answer"><span class="letter">B: </span>Azerbaijan Pie Incident</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Jordan Problem</p>
+<p class="answer"><span class="letter">D: </span>Iran-Contra Affair</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $8, which of these Americans is best known as an accomplished pianist?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Hilary Hahn</p>
+<p class="answer"><span class="letter">B: </span>Benny Goodman</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Ella Fitzgerald</p>
+<p class="answer"><span class="letter">D: </span>Duke Ellington</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $6, which of these men spearheaded the Egyptian revolution of 1952?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Farouk</p>
+<p class="answer"><span class="letter">B: </span>Begin</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Naguib</p>
+<p class="answer"><span class="letter">D: </span>Carter</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $7, which of these Russians composed a work based on Shakespeare's Romeo and Juliet?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Tchaikovsky</p>
+<p class="answer"><span class="letter">B: </span>Shostakovich</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Scriabin</p>
+<p class="answer"><span class="letter">D: </span>Glinka</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $3, which of these authors tried to decline the Nobel Prize in Literature?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Ernaux</p>
+<p class="answer"><span class="letter">B: </span>Heaney</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Sartre</p>
+<p class="answer"><span class="letter">D: </span>Morrison</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $7, which of these is the capital of a European country east of Germany?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>London</p>
+<p class="answer"><span class="letter">B: </span>Amsterdam</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Tallinn</p>
+<p class="answer"><span class="letter">D: </span>Reykjavik</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $4, which of these is a school in the Magnolia State?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Alcorn State University</p>
+<p class="answer"><span class="letter">B: </span>Bryn Mawr College</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Bowdoin College</p>
+<p class="answer"><span class="letter">D: </span>Howard University</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $2, which of these people was part of the iconic cinematic duo that starred in such films as Pillow Talk?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Stan Laurel</p>
+<p class="answer"><span class="letter">B: </span>Lou Costello</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Rock Hudson</p>
+<p class="answer"><span class="letter">D: </span>Jack Lemmon</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $10, which of these is a US state capital?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Kansas City</p>
+<p class="answer"><span class="letter">B: </span>Topeka</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>New York City</p>
+<p class="answer"><span class="letter">D: </span>Chicago</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $3, spinning a large wheel is a component of which of these game shows?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Hollywood Squares</p>
+<p class="answer"><span class="letter">B: </span>The Price is Right</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Who Wants to be a Millionaire?</p>
+<p class="answer"><span class="letter">D: </span>Only Connect</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $4, which of these Germans contributed to the development of quantum physics?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Beethoven</p>
+<p class="answer"><span class="letter">B: </span>Heisenberg</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Merkel</p>
+<p class="answer"><span class="letter">D: </span>Bismarck</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $1, which of these men served as President of France?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Napoleon Bonaparte</p>
+<p class="answer"><span class="letter">B: </span>Christian Louboutin</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Emmanuel Macron</p>
+<p class="answer"><span class="letter">D: </span>Pierre Trudeau</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $6, which of these films won at least 8 Oscars at the Academy Awards?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>From Here to Eternity</p>
+<p class="answer"><span class="letter">B: </span>Pulp Fiction</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>The Lord of the Rings: Fellowship of the Ring</p>
+<p class="answer"><span class="letter">D: </span>The Godfather: Part III</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $13, which of these women was married to the playwright Arthur Miller?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Hillary Clinton</p>
+<p class="answer"><span class="letter">B: </span>Eleanor of Aquitaine</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Alma Mahler</p>
+<p class="answer"><span class="letter">D: </span>Inge Morath</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $11, which of these people was President of South Korea?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Roh Moo-hyun</p>
+<p class="answer"><span class="letter">B: </span>Kim Jong Il</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Park Chan-wook</p>
+<p class="answer"><span class="letter">D: </span>Ban Ki-moon</p>
+</div></div>
+
+<div class="item">
+<div class="row"><p class="question">For $5, which of these works won the Hugo Award for Best Novel?</p></div>
+<div class="row">
+<p class="answer"><span class="letter">A: </span>Harry Potter and the Chamber of Secrets</p>
+<p class="answer"><span class="letter">B: </span>The Hobbit</p>
+</div>
+<div class="row">
+<p class="answer"><span class="letter">C: </span>Gideon the Ninth</p>
+<p class="answer"><span class="letter">D: </span>Ender's Game</p>
+</div></div>
+
+
+{% endblock %}
