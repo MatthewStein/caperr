@@ -101,8 +101,8 @@ Note that this means you may see fewer puzzles than if you were logged out. Also
                 <a href="{% url 'puzzle' s.submission.puzzle.slug %}">{{ s.submission.puzzle.name }}</a>
             </td>
             <td>{{ s.guesses }}</td>
-            <td sorttable_customkey="{{ s.unlock_time|unix_time }}">{% format_time s.unlock_time %}</td>
-            <td sorttable_customkey="{{ s.open_duration }}">{% format_duration s.open_duration %}</td>
+<!--             <td sorttable_customkey="{{ s.unlock_time|unix_time }}">{% format_time s.unlock_time %}</td>
+            <td sorttable_customkey="{{ s.open_duration }}">{% format_duration s.open_duration %}</td> -->
             <td sorttable_customkey="{{ s.solve_time|unix_time }}">{% format_time s.solve_time %}</td>
         </tr>
         {% endfor %}
