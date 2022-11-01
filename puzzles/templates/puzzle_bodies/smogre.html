@@ -1,8 +1,63 @@
 {% extends "puzzle.html" %}
 {% block puzzle-body-md %}
 <style>
+.sighting {
+	width: 45%;
+	padding: 15px;
+}
 </style>
 
+<p>In cities all around the world, a Smogre has been sighted around various tall structures. Much more malicious than its Shrek-like cousins, the Smogre feeds off and disguises itself in polluted air.</p>
+<p>We've received a dozen reports of Smogre sightings. Each report noted the structure where the Smogre was initially sighted, the route followed while tracking the creature, and the final location where the Smogre was sighted in that city before vanishing in a cloud of smog. Just one small problem: the directions got all jumbled in our system, and we aren't sure which direction goes with which structure and final sighting image.</p>
+<p>The Smogre seemed intent on concealing certain data at each of its final sighting locations. Perhaps if you can recover that data, you can determine what can be used to trap the Smogre once and for all.</p>
 
+<h3>Structures</h3>
+<p><i>(In the order in which The Smogre was sighted. Refresh the page to reset starting views.)</i></p>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326494875!6m8!1m7!1sJg8_Gwkb2prRGY2kee2Q2g!2m2!1d36.14809718306903!2d-115.1542994272173!3f233.00543489797963!4f29.11!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326041874!6m8!1m7!1s-uXMnJYXQhKsN6ORXEz6wA!2m2!1d47.619770923485!2d-122.3488069216347!3f327.6!4f32.44!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326574297!6m8!1m7!1sntxToJKVN3-RHe2nsAczIw!2m2!1d41.40372047461849!2d2.173300713052333!3f91.50694434696283!4f23.68026069226036!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326591246!6m8!1m7!1sXu76XU8oBWw8oASBByyLzg!2m2!1d43.72314391609787!2d10.39725225872262!3f249.9823637970582!4f20.14212695181284!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326863949!6m8!1m7!1swVOJgUj12n8xjcweO3Hi2A!2m2!1d35.65716464332417!2d139.7458442210232!3f341.9508874805175!4f30.6780101003952!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326876186!6m8!1m7!1sZiRSY-_8YXSf3ad_uvyuCQ!2m2!1d38.88946789930943!2d-77.03943029062172!3f89.08684518971928!4f1.3477795917669226!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326897934!6m8!1m7!1sWkjeTmzjTLxV_e0J77v1TA!2m2!1d40.74823787532852!2d-73.98471512034372!3f284.2244163603351!4f46.93212400134979!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326909794!6m8!1m7!1s-XswRPE0SgNoAHy2TokBRg!2m2!1d37.79631842688185!2d-122.4043893509558!3f126.2778914070812!4f22.451449205950354!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326952249!6m8!1m7!1sJHtSCy7tN-C-33qujLoLGA!2m2!1d48.85910379651076!2d2.29361534592463!3f136.53113026007242!4f34.88613759657986!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326966828!6m8!1m7!1smJpdG2D4WzRvMD0zgXo3LA!2m2!1d25.19893251107863!2d55.27347111644161!3f157.67179708660316!4f40.65835700849232!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667326980242!6m8!1m7!1sMI-4ebv1Q3oNxzD065TMlQ!2m2!1d41.87938070281585!2d-87.63510863290836!3f216.2563315163157!4f38.554854842671574!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1667327053611!6m8!1m7!1s3Z8Lc_6ipuHFIyTQABq8fg!2m2!1d51.50096457404091!2d-0.1253694732981835!3f115.93548628429352!4f20.731232912114706!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>
+
+<h3>Directions</h3>
+<p><i>(In no particular order.)</i></p>
+<ul>
+<li>Head down a street with a line of flags hanging on the right side. On this block, keep an eye out on the left.</li>
+<li>Take a left, then a left on the street that is the first letter of the first name of the structure's dedicatee, then a left on the street that is equivalent to the first letter of the last name of the structure's dedicatee. Keep an eye out on the left within the next block.</li>
+<li>With your back to the structure, head right past a green ice cream stand. Keep straight on this road, keeping an eye out on the right directly across from a fence with red and white bars.</li>
+<li>Head straight down the street named for the structure, with a square park on your left. Keep an eye out on the right.</li>
+<li>Head directly away from the structure. Stop at the major intersection with the flying items by a large mural.</li>
+<li>Turn around and take the road immediately to the right of the sunflowers. Take the next right and keep an eye out on the left.</li>
+<li>With your back to the structure, head right. There is a long corridor seemingly wrapped in metal loops on the left. As you near a ramp leading up to a mall, keep an eye out on your right.</li>
+<li>Head down a downward-sloping road. Take a right and move past a building sporting the insignia of an internationally famous car company. Keep an eye out on your right.</li>
+<li>With your back to the structure and its neighboring cathedral, head through the gates. Take the first right just past a food stand and follow the road as it curves. Keep an eye out straight ahead.</li>
+<li>Head due north. Take a left at the particularly colorful building. Keep an eye out on the right.</li>
+<li>Turn around and follow the road with a series of signs for a major bank on your left. Take a right under the train tracks while keeping an eye above yourself.</li>
+<li>Head east along a road in the direction of a Ferris wheel in the distance. As you near a bridge, keep an eye out on the left.</li>
+</ul>
+
+<h3>Final Sightings</h3>
+<p><i>(In the order in which The Smogre was sighted.)</i></p>
+<img class="sighting" src="../static/images/smogre/1.png" alt="">
+<img class="sighting" src="../static/images/smogre/2.png" alt="">
+<img class="sighting" src="../static/images/smogre/3.png" alt="">
+<img class="sighting" src="../static/images/smogre/4.png" alt="">
+<img class="sighting" src="../static/images/smogre/5.png" alt="">
+<img class="sighting" src="../static/images/smogre/6.png" alt="">
+<img class="sighting" src="../static/images/smogre/7.png" alt="">
+<img class="sighting" src="../static/images/smogre/8.png" alt="">
+<img class="sighting" src="../static/images/smogre/9.png" alt="">
+<img class="sighting" src="../static/images/smogre/10.png" alt="">
+<img class="sighting" src="../static/images/smogre/11.png" alt="">
+<img class="sighting" src="../static/images/smogre/12.png" alt="">
 
 {% endblock %}
