@@ -3,7 +3,7 @@
   fields:
     name: Assignments
     slug: assignments
-    meta: 4
+    meta: 5
 - model: puzzles.Puzzle
   pk: 1
   fields:
@@ -44,3 +44,14 @@
     round: 1
     unlock_global: 0
     unlock_local: 3
+- model: puzzles.Puzzle
+  pk: 5
+  fields:
+    name: The Supervillain
+    slug: supervillain
+    body_template: supervillain.html
+    answer: IT'S NOT EASY BEING GREEN
+    round: 1
+    is_meta: true
+    unlock_global: 0
+    unlock_local: 4

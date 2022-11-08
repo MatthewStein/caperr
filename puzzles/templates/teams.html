@@ -22,16 +22,14 @@
             <th>Team</th>
             {% if hunt_has_started %}
                 <th>Solves</th>
-                {% comment %}
                 <th>Finish Time</th>
-                {% endcomment %}
             {% endif %}
         </tr>
         {% for team in teams %}
         <tr {% if team.is_current %}class="current-team"{% endif %}>
             <td>{{ forloop.counter }}</td>
             <td>
-                {% if team.metameta_solve_time is not None %}🏆{% endif %}
+                {% if team.metameta_solve_time is not None %}🦸{% endif %}
                 <a href="team/{{ team.team_name|urlencode }}">{{ team.team_name }}</a>
                 {# {{ team.team_name }} #}
                 {% if is_superuser %}
@@ -40,7 +38,7 @@
             </td>
             {% if hunt_has_started %}
                 <td>{{ team.total_solves }}</td>
-                {# <td>{% format_time team.metameta_solve_time %}</td> #}
+                <td>{% format_time team.metameta_solve_time %}</td>
             {% endif %}
         </tr>
         {% endfor %}

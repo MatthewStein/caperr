@@ -34,15 +34,15 @@ HUNT_START_TIME = timezone.make_aware(datetime.datetime(
 ))
 HUNT_END_TIME = timezone.make_aware(datetime.datetime(
     year=2022,
-    month=11,
-    day=9,
+    month=12,
+    day=30,
     hour=12,
     minute=0,
 ))
 HUNT_CLOSE_TIME = timezone.make_aware(datetime.datetime(
     year=2022,
-    month=11,
-    day=16,
+    month=12,
+    day=30,
     hour=12,
     minute=0,
 ))
@@ -85,4 +85,4 @@ TEAM_AGE_BEFORE_FREE_ANSWERS = datetime.timedelta(days=3)
 # they can view) and to classify puzzles as intro-round or not. They won't make
 # sense for every hunt.
 INTRO_ROUND_SLUG = 'intro'
-META_META_SLUG = 'meta-meta'
+META_META_SLUG = 'supervillain'

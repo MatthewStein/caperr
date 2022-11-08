@@ -1,0 +1,78 @@
+{% extends "puzzle.html" %}
+{% block puzzle-body-md %}
+<style>
+.indices {
+	padding: 20px;
+}
+.indices span {
+	display: inline-block;
+	text-align: center;
+	width: 35px;
+	margin: 10px;
+	border-top: 3px solid black;
+}
+.pa {
+	background-color: rgba(0,85,170,.8);
+	color: white;
+}
+</style>
+
+<p>Heroes — congratulations! You've already accomplished so much.</p>
+<p>You demonstrated your creative recycling abilities and brought down the Trash Monster. You combined your heads to conquer the Apathydra. You took responsibility, found some answers, and defeated the Wild Fire Dragon. You showed off your perceptive and navigational skills and trapped the Smogre.</p>
+<p>We have one final task to cap off your first gig at Caperr: identify the supervillain behind all this mayhem.</p>
+<p>We believe this evil mastermind has left behind a secret message in the aftermath of the monsters they've unleashed. Use what you've learned from your previous 4 missions, along with the artifacts we've sent you, to reveal a new answer for each of the 4 elemental monsters. Then combine the elements to reveal the Supervillain's final message.</p>
+
+
+<h3>Tips</h3>
+<ul>
+<li>This is a <i>metapuzzle</i> that uses the answers to the previous puzzles you've solved. If you haven't yet solved all 4 puzzles, you may still be able to complete this final puzzle, though it might be harder.</li>
+<li>This puzzle uses some physical components that have been distributed to a member of your team. If for any reason you don't have a set of the physical components, email us at <a href="mailto:{{ contact_email }}">{{ contact_email }}</a> for digital backups.</li>
+<li>You may use the answer checker to confirm the answers to the 4 subpuzzles.</li>
+</ul>
+
+<h3>Earth (The Trash Monster)</h3>
+<p>Assemble the wedges to form words, then recycle each word to form <span class="pa">&#60;Trash Monster answer&#62;</span> and a little something extra.</p>
+
+<p class="indices">
+	<span>8</span>
+	<span>16</span>
+	<span>7</span>
+	<span>14</span>
+	<span>2</span>
+</p>
+
+<h3>Water (The Apathydra)</h3>
+<p>A cryptogram provides a mapping. The <span class="pa">&#60;Apathydra answer&#62;</span> indicates a certain trigram which must be modified. Use the cryptogram to decode those three letters, then decode those letters again and combine to form a 6-letter word.</p>
+
+<p class="indices">
+	<span>11</span>
+	<span>10</span>
+	<span>15</span>
+	<span>5</span>
+	<span>4</span>
+	<span>19</span>
+</p>
+
+<h3>Fire (The Wild Fire Dragon)</h3>
+<p>Apply some heat (or friction) to reveal a deeper meaning from within the glyphs. This will provide a <span class="pa">&#60;Wild Fire Dragon answer&#62;</span>, specifically a way to shift the letters of the first word of the answer.</p>
+
+<p class="indices">
+	<span>3</span>
+	<span>13</span>
+	<span>17</span>
+	<span>12</span>
+	<span>20</span>
+</p>
+
+<h3>Air (The Smogre)</h3>
+<p>Four clues piece together, then apply a <span class="pa">&#60;Smogre answer&#62;</span> to reveal a single letter from each clue's answer.</p>
+
+<p class="indices">
+	<span>9</span>
+	<span>1</span>
+	<span>6</span>
+	<span>18</span>
+</p>
+
+
+{% endblock %}
