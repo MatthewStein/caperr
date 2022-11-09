@@ -624,7 +624,7 @@ def solve(request):
                     dispatch_victory_alert(
                         _('Team %s has finished the hunt!') % team +
                         _('\n**Emails:** <%s>') % request.build_absolute_uri(reverse('finishers')))
-                    show_victory_notification(request.context)
+                    # show_victory_notification(request.context)
                     return redirect('victory')
             else:
                 messages.error(request, _('%s is incorrect.') % normalized_answer)
